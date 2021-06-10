@@ -1,0 +1,21 @@
+create database widget-app
+
+CREATE TABLE IF NOT EXISTS labelplaceholders (
+         labelID    INT UNSIGNED  NOT NULL AUTO_INCREMENT,
+         label         VARCHAR(30)   NOT NULL ,
+         placeholder     VARCHAR(100)   NOT NULL,
+         PRIMARY KEY  (labelID)
+       );
+CREATE TABLE IF NOT EXISTS feedback (
+         feedbackID    INT UNSIGNED  NOT NULL AUTO_INCREMENT,
+         experience_Label varchar(1) not null, 
+         label_Data         VARCHAR(30)   NULL ,
+         placeholder_Data     VARCHAR(100)   NOT NULL,
+         PRIMARY KEY  (feedbackID)
+       );
+
+INSERT INTO labelplaceholders VALUES (1001, 'What did you like most?', 'Tell us your experience (optional)');
+
+INSERT INTO labelplaceholders VALUES (1002, 'What did you like least?', 'Let us know how we can improve (optional)');
+
+INSERT INTO labelplaceholders VALUES (1003, 'Your email', 'Your email address optional)');
