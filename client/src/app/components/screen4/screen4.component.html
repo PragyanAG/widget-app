@@ -1,0 +1,26 @@
+<button  mat-icon-button class="close-button" [mat-dialog-close]="true">
+    <mat-icon class="close-icon" color="warn">close</mat-icon>
+</button>
+<h3 mat-dialog-title>Tell Us More</h3>
+<div class="grid-container">
+   
+    <form>
+      <div *ngFor="let labelPlaceholder of labelPlaceholders" style="padding:40px">
+        <label>{{labelPlaceholder.label}} </label>
+        <mat-form-field class="half-width">
+        <input matInput placeholder={{labelPlaceholder.placeholder}} type="text">
+      </mat-form-field>
+     
+     </div>
+      <div>
+        &nbsp;
+      </div>
+      <div align="right">
+        <button mat-raised-button (click)="saveFeedback()"
+          color="primary">Submit</button>
+        &nbsp; &nbsp;&nbsp; &nbsp;
+        
+      </div>
+    </form>
+  
+  </div>

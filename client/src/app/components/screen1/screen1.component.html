@@ -1,0 +1,25 @@
+<html>
+<head>
+<style>
+body {
+  background-color: skyblue;
+  color: black;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* On screens that are 600px wide or less, the background color is olive */
+
+</style>
+</head>
+<body>
+    <div style = "position:relative;" (mouseover)="changeText=true" (mouseout)="changeText=false"> 
+      <mat-icon style = "background-color:yellow;" *ngIf="!changeText">sentiment_satisfied</mat-icon>
+      <button mat-button mat-raised-button color="primary" *ngIf="changeText" (click)="btnAddNewClick();">HELP US IMPROVE</button>
+     
+    </div>
+    
+       
+</body>
+</html>

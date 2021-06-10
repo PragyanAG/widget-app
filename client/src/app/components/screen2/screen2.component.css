@@ -1,0 +1,64 @@
+.grid-container {
+    margin: 2px;
+  }
+  
+table {
+    
+    padding-top: 5px;
+    background-color: whitesmoke;
+    border: 1;
+    border-style: solid;
+    
+  }
+  
+  .mat-cell {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+  }
+  .mat-dialog-container {
+      padding: 0px;
+  }
+  .grid-container {
+    overflow: hidden;
+  }
+  .mat-raised-button{
+    font-style: bold;
+    font-size: 30px;  
+  }
+  button{
+      border: 4px;;
+  }
+  .close-button{
+    float: right;
+    top:-24px;
+    right:-24px;
+  }
+  
+  .close-icon {
+    transition: 1s ease-in-out;
+  }
+  
+  .close-icon:hover {
+    transform: rotate(180deg);
+  }
+  
+  ::ng-deep .icon-outside .close-button{
+    float: right;
+    top:-52px;
+    right:-52px;
+  }
+  
+  ::ng-deep .icon-outside .mat-dialog-container {
+   overflow: unset
+  }
+  td {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: normal;
+  }
+  
