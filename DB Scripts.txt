@@ -18,4 +18,4 @@ INSERT INTO labelplaceholders VALUES (1001, 'What did you like most?', 'Tell us 
 
 INSERT INTO labelplaceholders VALUES (1002, 'What did you like least?', 'Let us know how we can improve (optional)');
 
-INSERT INTO labelplaceholders VALUES (1003, 'Your email', 'Your email address optional)');
+INSERT INTO labelplaceholders VALUES (1003, 'Your email', 'Your email address (optional)');
